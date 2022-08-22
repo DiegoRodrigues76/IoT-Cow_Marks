@@ -1,0 +1,326 @@
+RAGMA foreign_keys = '1';
+PRAGMA database_list;
+SELECT type,name,sql,tbl_name FROM "main".sqlite_master;
+PRAGMA encoding
+PRAGMA foreign_keys
+CREATE TABLE "cadastro de usuário" (
+	"Nome Completo"	TEXT,
+	"CPF"	NUMERIC,
+	"E-mail"	TEXT,
+	"Senha"	TEXT,
+	"Confirme a Senha"	TEXT
+);
+PRAGMA database_list;
+SELECT type,name,sql,tbl_name FROM "main".sqlite_master;
+PRAGMA foreign_keys
+CREATE TABLE "Cadastro da Fazenda " (
+	"Nome da Fazenda"	TEXT,
+	"Cidade"	TEXT,
+	"Quantidade de Animais"	INTEGER
+);
+PRAGMA database_list;
+SELECT type,name,sql,tbl_name FROM "main".sqlite_master;
+PRAGMA foreign_keys
+CREATE TABLE "Cadastro do Gado" (
+	"Código"	TEXT,
+	"Nome do Animal"	TEXT,
+	"Nascimento do Animal"	TEXT,
+	"Código do Pai"	TEXT,
+	"Código da Mãe "	TEXT
+);
+PRAGMA database_list;
+SELECT type,name,sql,tbl_name FROM "main".sqlite_master;
+PRAGMA database_list;
+SELECT type,name,sql,tbl_name FROM "main".sqlite_master;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+PRAGMA auto_vacuum
+PRAGMA automatic_index
+PRAGMA checkpoint_fullfsync
+PRAGMA foreign_keys
+PRAGMA fullfsync
+PRAGMA ignore_check_constraints
+PRAGMA journal_mode
+PRAGMA journal_size_limit
+PRAGMA locking_mode
+PRAGMA max_page_count
+PRAGMA page_size
+PRAGMA recursive_triggers
+PRAGMA secure_delete
+PRAGMA synchronous
+PRAGMA temp_store
+PRAGMA user_version
+PRAGMA wal_autocheckpoint
+SELECT 'x' NOT LIKE 'X'
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Ra%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Ra%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de %' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de %' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, %' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, %' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, Pa%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, Pa%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, Par%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, Par%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, Parai%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, Parai%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, Paraiba%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, Paraiba%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, Paraiba%' ESCAPE '\' AND "Quantidade de Animais" LIKE '%1%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, Paraiba%' ESCAPE '\' AND "Quantidade de Animais" LIKE '%1%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, Paraiba%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, Paraiba%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, Paraiba%' ESCAPE '\' AND "Quantidade de Animais" LIKE '%50%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, Paraiba%' ESCAPE '\' AND "Quantidade de Animais" LIKE '%50%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+PRAGMA database_list;
+SELECT type,name,sql,tbl_name FROM "main".sqlite_master;
+SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, Paraiba%' ESCAPE '\' AND "Quantidade de Animais" LIKE '%50%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, Paraiba%' ESCAPE '\' AND "Quantidade de Animais" LIKE '%50%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+PRAGMA database_list;
+SELECT type,name,sql,tbl_name FROM "main".sqlite_master;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, Paraiba%' ESCAPE '\' AND "Quantidade de Animais" LIKE '%50%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, Paraiba%' ESCAPE '\' AND "Quantidade de Animais" LIKE '%50%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+PRAGMA auto_vacuum
+PRAGMA automatic_index
+PRAGMA checkpoint_fullfsync
+PRAGMA foreign_keys
+PRAGMA fullfsync
+PRAGMA ignore_check_constraints
+PRAGMA journal_mode
+PRAGMA journal_size_limit
+PRAGMA locking_mode
+PRAGMA max_page_count
+PRAGMA page_size
+PRAGMA recursive_triggers
+PRAGMA secure_delete
+PRAGMA synchronous
+PRAGMA temp_store
+PRAGMA user_version
+PRAGMA wal_autocheckpoint
+SELECT 'x' NOT LIKE 'X'
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" ORDER BY "_rowid_" ASC);
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz %' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz %' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Fra%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Fra%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francis%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francis%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Franciso%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Franciso%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco %' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco %' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco d%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco d%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da %' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da %' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da SI%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da SI%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da SIl%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da SIl%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da S%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da S%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Si%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Si%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silv%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silv%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%1%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%1%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.3%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.3%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.32%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.32%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.1%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.1%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.12%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.12%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-1%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-1%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%fr%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%fr%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%fran%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%fran%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francis%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francis%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@g%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@g%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmai%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmai%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%627%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%627%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%62726%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%62726%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%627268%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%627268%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%627268%' ESCAPE '\' AND "Confirme a Senha" LIKE '%726%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%627268%' ESCAPE '\' AND "Confirme a Senha" LIKE '%726%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%627268%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%627268%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%627268%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%627268%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%627268%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t67%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%627268%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t67%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%627268%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%627268%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%627268%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%627268%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%62726%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%62726%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%7%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%7%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%72%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%72%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%726%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%726%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%7267%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%7267%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%7267t%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%7267t%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%7267t6%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%7267t6%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%7267t6e%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%7267t6e%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%7267t6e%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%7267t6e%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, Paraiba%' ESCAPE '\' AND "Quantidade de Animais" LIKE '%50%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, Paraiba%' ESCAPE '\' AND "Quantidade de Animais" LIKE '%50%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%Ra%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%Ra%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%Raio de %' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%Raio de %' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%Raio de Luz%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%Raio de Luz%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%Raio de Lu%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%Raio de Lu%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%G%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%G%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GM%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GM%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%C%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%C%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Ca%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Ca%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/0%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/0%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/20%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/20%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/200%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/200%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/2005%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/2005%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/2005%' ESCAPE '\' AND "Código do Pai" LIKE '%G%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/2005%' ESCAPE '\' AND "Código do Pai" LIKE '%G%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/2005%' ESCAPE '\' AND "Código do Pai" LIKE '%GM%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/2005%' ESCAPE '\' AND "Código do Pai" LIKE '%GM%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/2005%' ESCAPE '\' AND "Código do Pai" LIKE '%GM0%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/2005%' ESCAPE '\' AND "Código do Pai" LIKE '%GM0%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/2005%' ESCAPE '\' AND "Código do Pai" LIKE '%GM01%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/2005%' ESCAPE '\' AND "Código do Pai" LIKE '%GM01%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/2005%' ESCAPE '\' AND "Código do Pai" LIKE '%GM01%' ESCAPE '\' AND "Código da Mãe " LIKE '%G%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/2005%' ESCAPE '\' AND "Código do Pai" LIKE '%GM01%' ESCAPE '\' AND "Código da Mãe " LIKE '%G%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/2005%' ESCAPE '\' AND "Código do Pai" LIKE '%GM01%' ESCAPE '\' AND "Código da Mãe " LIKE '%GM%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/2005%' ESCAPE '\' AND "Código do Pai" LIKE '%GM01%' ESCAPE '\' AND "Código da Mãe " LIKE '%GM%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/2005%' ESCAPE '\' AND "Código do Pai" LIKE '%GM01%' ESCAPE '\' AND "Código da Mãe " LIKE '%GM0%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/2005%' ESCAPE '\' AND "Código do Pai" LIKE '%GM01%' ESCAPE '\' AND "Código da Mãe " LIKE '%GM0%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/2005%' ESCAPE '\' AND "Código do Pai" LIKE '%GM01%' ESCAPE '\' AND "Código da Mãe " LIKE '%GM02%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro do Gado" WHERE "Código" LIKE '%GMO3%' ESCAPE '\' AND "Nome do Animal" LIKE '%Cadu%' ESCAPE '\' AND "Nascimento do Animal" LIKE '%01/03/2005%' ESCAPE '\' AND "Código do Pai" LIKE '%GM01%' ESCAPE '\' AND "Código da Mãe " LIKE '%GM02%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+INSERT INTO "main"."Cadastro do Gado"("Código","Nome do Animal","Nascimento do Animal","Código do Pai","Código da Mãe ") VALUES (NULL,NULL,NULL,NULL,NULL);
+UPDATE "main"."Cadastro do Gado" SET "Código do Pai"=? WHERE "_rowid_"='1';
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, Paraiba%' ESCAPE '\' AND "Quantidade de Animais" LIKE '%50%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+SELECT "_rowid_",* FROM "main"."Cadastro da Fazenda " WHERE "Nome da Fazenda" LIKE '%Raio de Luz%' ESCAPE '\' AND "Cidade" LIKE '%Conde, Paraiba%' ESCAPE '\' AND "Quantidade de Animais" LIKE '%50%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+INSERT INTO "main"."Cadastro da Fazenda "("Nome da Fazenda","Cidade","Quantidade de Animais") VALUES (NULL,NULL,NULL);
+SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%7267t6e%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC LIMIT 0, 49999;
+SELECT COUNT(*) FROM (SELECT "_rowid_",* FROM "main"."cadastro de usuário" WHERE "Nome Completo" LIKE '%Luiz Francisco da Silva%' ESCAPE '\' AND "CPF" LIKE '%123.321.123-12%' ESCAPE '\' AND "E-mail" LIKE '%francisco@gmail.com%' ESCAPE '\' AND "Senha" LIKE '%7267t6e%' ESCAPE '\' AND "Confirme a Senha" LIKE '%7267t6e%' ESCAPE '\' ORDER BY "_rowid_" ASC);
+INSERT INTO "main"."cadastro de usuário"("Nome Completo","CPF","E-mail","Senha","Confirme a Senha") VALUES (NULL,NULL,NULL,NULL,NULL);
+CREATE UNIQUE INDEX "Dados do Usuário" ON "cadastro de usuário" (
+	"Nome Completo",
+	"CPF",
+	"E-mail",
+	"Senha"
+);
+PRAGMA database_list;
+SELECT type,name,sql,tbl_name FROM "main".sqlite_master;
+CREATE INDEX "Dados da Fazenda" ON "Cadastro da Fazenda " (
+	"Nome da Fazenda",
+	"Cidade",
+	"Quantidade de Animais"
+);
+PRAGMA database_list;
+SELECT type,name,sql,tbl_name FROM "main".sqlite_master;
+CREATE INDEX "Dados do Gado" ON "Cadastro do Gado" (
+	"Código",
+	"Nome do Animal",
+	"Nascimento do Animal",
+	"Código do Pai",
+	"Código da Mãe "
+);
+PRAGMA database_list;
+SELECT type,name,sql,tbl_name FROM "main".sqlite_master;
+DROP INDEX IF EXISTS "main"."Dados da Fazenda";
+PRAGMA database_list;
+SELECT type,name,sql,tbl_name FROM "main".sqlite_master;
+CREATE UNIQUE INDEX "Dados da Fazenda" ON "Cadastro da Fazenda " (
+	"Nome da Fazenda",
+	"Cidade",
+	"Quantidade de Animais"
+);
+PRAGMA database_list;
+SELECT type,name,sql,tbl_name FROM "main".sqlite_master;
